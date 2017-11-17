@@ -15,9 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/BackGround'function()
-{
-$post=new \App\BackGround();
+Route::get('/BackGround',function () {
+    $post = new \App\BackGround();
 
-$post = BackGround::all();
-);
+    $post = BackGround::all();
+});
