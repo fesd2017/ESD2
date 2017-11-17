@@ -24,6 +24,8 @@ class CreatStudentTable extends Migration
             $table->boolean('sex');
             $table->string('class',10);
             $table->string('address',60);
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 
